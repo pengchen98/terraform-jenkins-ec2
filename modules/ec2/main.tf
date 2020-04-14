@@ -1,6 +1,6 @@
 data "aws_caller_identity" "current" {}
 
-data "aws_ami" "ec2_instance" {
+/*data "aws_ami" "ec2_instance" {
   most_recent = true
   
   filter {
@@ -15,10 +15,10 @@ data "aws_ami" "ec2_instance" {
   }
 
   owners = ["752717405135"]
-}
+}*/
 
 resource "aws_instance" "web" {
-  ami           = "${data.aws_ami.ec2_instance.id}"
+  ami           = "ami-0022c769"
   instance_type = "t2.micro"
 
   tags = {
