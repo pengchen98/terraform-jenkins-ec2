@@ -19,8 +19,8 @@ data "aws_caller_identity" "current" {}
 
 resource "aws_instance" "web" {
   //ami           = "ami-0ce2e5b7d27317779"
-  ami           = "ami-0022c769"
-  instance_type = "t2.micro"
+  ami           = "ami-08bc77a2c7eb2b1da"
+  instance_type = "t2.large"
 
   tags = {
     Name = "EC2 Demo Instance"
