@@ -18,7 +18,7 @@ data "aws_caller_identity" "current" {}
 }*/
 
 resource "aws_instance" "web" {
-  ami           = "ami-0022c769"
+  ami           = "ami-0ce2e5b7d27317779"
   instance_type = "t2.micro"
 
   tags = {
